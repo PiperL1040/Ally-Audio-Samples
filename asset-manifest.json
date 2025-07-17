@@ -1,17 +1,13 @@
 {
   "files": {
     "main.css": "/Ally-Audio-Samples/static/css/main.e6c13ad2.css",
-    "main.js": "/Ally-Audio-Samples/static/js/main.a79240b0.js",
-    "static/media/salon.mp3": "/Ally-Audio-Samples/static/media/salon.5dd8da5c28946f5dfc61.mp3",
-    "static/media/resturante.mp3": "/Ally-Audio-Samples/static/media/resturante.d0dc507f49931b164500.mp3",
-    "static/media/plumping.mp3": "/Ally-Audio-Samples/static/media/plumping.13e734f01120a0597346.mp3",
-    "static/media/medspa.mp3": "/Ally-Audio-Samples/static/media/medspa.578f510351c1f3dcea33.mp3",
+    "main.js": "/Ally-Audio-Samples/static/js/main.5a0ada30.js",
     "index.html": "/Ally-Audio-Samples/index.html",
     "main.e6c13ad2.css.map": "/Ally-Audio-Samples/static/css/main.e6c13ad2.css.map",
-    "main.a79240b0.js.map": "/Ally-Audio-Samples/static/js/main.a79240b0.js.map"
+    "main.5a0ada30.js.map": "/Ally-Audio-Samples/static/js/main.5a0ada30.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a79240b0.js"
+    "static/js/main.5a0ada30.js"
   ]
 }
