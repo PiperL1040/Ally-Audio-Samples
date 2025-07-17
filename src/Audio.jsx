@@ -3,19 +3,19 @@ import React, { useEffect, useRef } from "react";
 const audioData = [
   {
     label: "Restaurant Services",
-    base64: "PUT-YOUR-FIRST-AUDIO-BASE64-HERE",
+    base64: process.env.PUBLIC_URL + "/audio/resturante.mp3",
   },
   {
     label: "Plumbing Services",
-    base64: "PUT-YOUR-SECOND-AUDIO-BASE64-HERE",
+    base64: process.env.PUBLIC_URL + "/audio/plumping.mp3",
   },
   {
     label: "Salon Services",
-    base64: "PUT-YOUR-THIRD-AUDIO-BASE64-HERE",
+    base64: process.env.PUBLIC_URL + "/audio/salon.mp3",
   },
   {
     label: "Med Spa Services",
-    base64: "PUT-YOUR-FOURTH-AUDIO-BASE64-HERE",
+    base64: process.env.PUBLIC_URL + "/audio/medspa.mp3",
   },
 ];
 
@@ -28,7 +28,7 @@ const AudioCard = ({ label, base64, audioRefs, index }) => (
       className="w-full h-10 rounded-lg bg-[#2b2b44] text-white"
       title={label}
     >
-      <source src={`data:audio/mp3;base64,${base64}`} type="audio/mp3" />
+      <source src={base64} type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
   </div>
@@ -75,3 +75,4 @@ const AudioServices = () => {
 };
 
 export default AudioServices;
+
