@@ -24,13 +24,45 @@
 
 // export default App;
 
+// import React from "react";
+// import AudioServices from "./Audio";
+
+// function App() {
+//   return (
+//     <div>
+//       <AudioServices />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+// import React from "react";
+// import AudioServices from "./Audio";
+// import VoiceAgentsShowcase from "./VoiceAgentsShowcase";
+
+// function App() {
+//   return (
+//     <div>
+//       {/* Voice Agent Cards */}
+//       <VoiceAgentsShowcase />
+
+//       {/* Audio Services */}
+//       <AudioServices />
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React from "react";
-import AudioServices from "./Audio";
+import VoiceAgentsShowcase from "./VoiceAgentsShowcase";
 
 function App() {
   return (
     <div>
-      <AudioServices />
+      <VoiceAgentsShowcase />
     </div>
   );
 }

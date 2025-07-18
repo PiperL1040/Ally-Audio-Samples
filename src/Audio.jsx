@@ -3,19 +3,19 @@ import React, { useEffect, useRef } from "react";
 const audioData = [
   {
     label: "Restaurant Services",
-    base64: process.env.PUBLIC_URL + "/audio/resturante.mp3",
+    base64: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
   },
   {
     label: "Plumbing Services",
-    base64: process.env.PUBLIC_URL + "/audio/plumping.mp3",
+    base64: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
   },
   {
     label: "Salon Services",
-    base64: process.env.PUBLIC_URL + "/audio/salon.mp3",
+    base64: process.env.PUBLIC_URL + "/audio/Salon.mp3",
   },
   {
     label: "Med Spa Services",
-    base64: process.env.PUBLIC_URL + "/audio/medspa.mp3",
+    base64: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
   },
 ];
 
