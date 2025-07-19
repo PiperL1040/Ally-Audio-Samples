@@ -176,6 +176,7 @@ export default function VoiceAgentsShowcase() {
                     <source src={agent.audio} type="audio/mpeg" />
                     Your browser does not support the audio element.
                   </audio>
+                  {/* Add more <audio> elements here if needed */}
                 </div>
               </div>
             </div>
