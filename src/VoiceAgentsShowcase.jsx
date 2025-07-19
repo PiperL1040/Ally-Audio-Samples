@@ -73,13 +73,18 @@ export default function VoiceAgentsShowcase() {
                 </p>
               </div>
 
-              <div className="space-y-3 mt-auto">
-                <p className="text-sm font-medium text-gray-700">Voice Demo</p>
-                <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                  <audio controls className="w-full" aria-label={`Audio demo for ${agent.title}`}>
+              <div className="mt-auto">
+                <p className="text-sm font-medium text-gray-700 mb-2">Voice Demo</p>
+                <div className="bg-[#0a2540] text-white rounded-lg p-4 flex flex-wrap gap-4">
+                  <audio
+                    controls
+                    className="w-48"
+                    aria-label={`Audio demo for ${agent.title}`}
+                  >
                     <source src={agent.audio} type="audio/mpeg" />
                     Your browser does not support the audio element.
                   </audio>
+                  {/* Add more <audio> elements here if needed */}
                 </div>
               </div>
             </div>
