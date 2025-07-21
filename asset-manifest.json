@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Ally-Audio-Samples/static/css/main.cc6ef198.css",
+    "main.css": "/Ally-Audio-Samples/static/css/main.dfa78c41.css",
     "main.js": "/Ally-Audio-Samples/static/js/main.2c6c82fc.js",
     "index.html": "/Ally-Audio-Samples/index.html",
-    "main.cc6ef198.css.map": "/Ally-Audio-Samples/static/css/main.cc6ef198.css.map",
+    "main.dfa78c41.css.map": "/Ally-Audio-Samples/static/css/main.dfa78c41.css.map",
     "main.2c6c82fc.js.map": "/Ally-Audio-Samples/static/js/main.2c6c82fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc6ef198.css",
+    "static/css/main.dfa78c41.css",
     "static/js/main.2c6c82fc.js"
   ]
 }
