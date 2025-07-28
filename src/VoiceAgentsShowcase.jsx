@@ -233,7 +233,6 @@ export default function VoiceAgentsShowcase() {
     <div className="voice-agents-wrapper">
       <div className="voice-agents-container">
         <div className="voice-agents-header">
-          <h1>Hear AI Voice Agents in Action</h1>
           <p>Choose a call type to see how Synthflow AI agents handle real conversations.</p>
         </div>
 
@@ -267,3 +266,5 @@ export default function VoiceAgentsShowcase() {
     </div>
   );
 }
+
+//<h1>Hear AI Voice Agents in Action</h1>
