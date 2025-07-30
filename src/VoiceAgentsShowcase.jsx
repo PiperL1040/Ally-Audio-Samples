@@ -190,81 +190,391 @@
 //   );
 // }
 
-import React from "react";
-import "./App.css"; // Make sure this line is present to apply styles
+// import React from "react";
+// import "./App.css"; // Make sure this line is present to apply styles
 
-export default function VoiceAgentsShowcase() {
-  const agents = [
-    {
-      industry: "Restaurant",
-      title: "Reservation Assistant · Restaurant",
-      tags: ["#Receptionist", "#Real-Time Booking"],
-      description:
-        "Meet Leo, an AI assistant for the Daily Dish, a fine dining restaurant. His primary role is to assist callers in scheduling reservations at the Daily Dish.",
-      audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
-    },
-    {
-      industry: "Home Services",
-      title: "Service Dispatcher · Plumbing",
-      tags: ["#Appointment Scheduling", "#Emergency Call Handling", "#Service Routing"],
-      description:
-        "Meet Tom, an AI assistant for Fix It Plumbing. His primary role is to handle emergency service requests, schedule appointments, and route calls to on-call technicians, ensuring no customer inquiry goes unanswered.",
-      audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
-    },
-    {
-      industry: "Cosmetic",
-      title: "Healthcare Receptionist · Appointment Coordinator",
-      tags: ["#Consultation Booking", "#Treatment FAQs", "#Voice Receptionist"],
-      description:
-        "Meet Brenda, an AI assistant for Radiance Med Spa. She helps clients book consultations for lip filler and other aesthetic treatments, answers common questions about procedures and aftercare, and ensures smooth scheduling without the wait.",
-      audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
-    },
-    {
-      industry: "Beauty Services",
-      title: "Salon Assistant",
-      tags: ["#Appointment", "#FAQs"],
-      description:
-        "Meet Clara, an AI assistant for the Hive Salon, designed to manage appointments and answer frequently asked questions.",
-      audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
-    },
-  ];
+// export default function VoiceAgentsShowcase() {
+//   const agents = [
+//     {
+//       industry: "Restaurant",
+//       title: "Reservation Assistant · Restaurant",
+//       tags: ["•Receptionist", "•Real-Time Booking"],
+//       description:
+//         "Meet Leo, an AI assistant for the Daily Dish, a fine dining restaurant. His primary role is to assist callers in scheduling reservations at the Daily Dish.",
+//       audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
+//     },
+//     {
+//       industry: "Home Services",
+//       title: "Service Dispatcher · Plumbing",
+//       tags: ["•Appointment Scheduling", "•Emergency Call Handling", "•Service Routing"],
+//       description:
+//         "Meet Tom, an AI assistant for Fix It Plumbing. His primary role is to handle emergency service requests, schedule appointments, and route calls to on-call technicians, ensuring no customer inquiry goes unanswered.",
+//       audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
+//     },
+//     {
+//       industry: "Cosmetic",
+//       title: "Healthcare Receptionist · Appointment Coordinator",
+//       tags: ["•Consultation Booking", "•Treatment FAQs", "•Voice Receptionist"],
+//       description:
+//         "Meet Brenda, an AI assistant for Radiance Med Spa. She helps clients book consultations for lip filler and other aesthetic treatments, answers common questions about procedures and aftercare, and ensures smooth scheduling without the wait.",
+//       audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
+//     },
+//     {
+//       industry: "Beauty Services",
+//       title: "Salon Assistant",
+//       tags: ["•Appointment", "•FAQs"],
+//       description:
+//         "Meet Clara, an AI assistant for the Hive Salon, designed to manage appointments and answer frequently asked questions.",
+//       audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
+//     },
+//   ];
 
-  return (
-    <div className="voice-agents-wrapper">
-      <div className="voice-agents-container">
-        <div className="voice-agents-header">
-          <p>Choose a call type to see how Synthflow AI agents handle real conversations.</p>
-        </div>
+//   return (
+//     <div className="voice-agents-wrapper">
+//       <div className="voice-agents-container">
+//         <div className="voice-agents-header">
+//         </div>
 
-        <div className="agent-grid">
-          {agents.map((agent, idx) => (
-            <div key={idx} className="agent-card">
-              <div>
-                <span className="agent-tag">{agent.industry}</span>
-                <h3 className="agent-title">{agent.title}</h3>
-                <div className="agent-tags">
-                  {agent.tags.map((tag, i) => (
-                    <span key={i}>{tag} </span>
-                  ))}
-                </div>
-                <p className="agent-description">{agent.description}</p>
-              </div>
+//         <div className="agent-grid">
+//           {agents.map((agent, idx) => (
+//             <div key={idx} className="agent-card">
+//               <div>
+//                 <span className="agent-tag">{agent.industry}</span>
+// //                 <h3 className="agent-title">{agent.title}</h3>
+// //                 <div className="agent-tags">
+// //                   {agent.tags.map((tag, i) => (
+// //                     <span key={i}>{tag} </span>
+// //                   ))}
+// //                 </div>
+// //                 <p className="agent-description">{agent.description}</p>
+// //               </div>
 
-              <div className="agent-audio">
-                <p className="agent-audio-label">Voice Demo</p>
-                <div className="agent-audio-box">
-                  <audio controls style={{ width: "100%" }} aria-label={`Audio demo for ${agent.title}`}>
-                    <source src={agent.audio} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+// //               <div className="agent-audio">
+// //                 <p className="agent-audio-label">Voice Demo</p>
+// //                 <div className="agent-audio-box">
+// //                   <audio controls style={{ width: "100%" }} aria-label={`Audio demo for ${agent.title}`}>
+// //                     <source src={agent.audio} type="audio/mpeg" />
+// //                     Your browser does not support the audio element.
+// //                   </audio>
+// //                 </div>
+// //               </div>
+// //             </div>
+// //           ))}
+// //         </div>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // import React from "react";
+// // import { Link } from "react-router-dom"; // 👈 Import Link
+
+// // export default function VoiceAgentsShowcase() {
+// //    const agents = [
+// //      {
+// //        industry: "Restaurant",
+// //        title: "Reservation Assistant · Restaurant",
+// //        tags: ["•Receptionist", "•Real-Time Booking"],
+// //        description:
+// //          "Meet Leo, an AI assistant for the Daily Dish, a fine dining restaurant. His primary role is to assist callers in scheduling reservations at the Daily Dish.",
+// //        audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
+// //      },
+// //      {
+// //        industry: "Home Services",
+// //        title: "Service Dispatcher · Plumbing",
+// //        tags: ["•Appointment Scheduling", "•Emergency Call Handling", "•Service Routing"],
+// //        description:
+// //          "Meet Tom, an AI assistant for Fix It Plumbing. His primary role is to handle emergency service requests, schedule appointments, and route calls to on-call technicians, ensuring no customer inquiry goes unanswered.",
+// //        audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
+// //      },
+// //      {
+// //        industry: "Cosmetic",
+// //        title: "Healthcare Receptionist · Appointment Coordinator",
+// //        tags: ["•Consultation Booking", "•Treatment FAQs", "•Voice Receptionist"],
+// //        description:
+// //          "Meet Brenda, an AI assistant for Radiance Med Spa. She helps clients book consultations for lip filler and other aesthetic treatments, answers common questions about procedures and aftercare, and ensures smooth scheduling without the wait.",
+// //        audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
+// //      },
+// //      {
+// //        industry: "Beauty Services",
+// //        title: "Salon Assistant",
+// //        tags: ["•Appointment", "•FAQs"],
+// //        description:
+// //          "Meet Clara, an AI assistant for the Hive Salon, designed to manage appointments and answer frequently asked questions.",
+// //        audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
+// //      },
+// //    ];
+
+
+// //   return (
+// //     <div className="voice-agents-wrapper">
+// //       <div className="voice-agents-container">
+// //         <div className="voice-agents-header">
+// //         </div>
+
+// //         <div className="agent-grid">
+// //           {agents.map((agent, idx) => (
+// //             <div key={idx} className="agent-card">
+// //               <div>
+// //                 <span className="agent-tag">{agent.industry}</span>
+// //                 <h3 className="agent-title">{agent.title}</h3>
+// //                 <div className="agent-tags">
+// //                   {agent.tags.map((tag, i) => (
+// //                     <span key={i}>{tag} </span>
+// //                   ))}
+// //                 </div>
+// //                 <p className="agent-description">{agent.description}</p>
+// //               </div>
+
+// //               <div className="agent-audio">
+// //                 <p className="agent-audio-label">Voice Demo</p>
+// //                 <div className="agent-audio-box">
+// //                   <audio controls style={{ width: "100%" }} aria-label={`Audio demo for ${agent.title}`}>
+// //                     <source src={agent.audio} type="audio/mpeg" />
+// //                     Your browser does not support the audio element.
+// //                   </audio>
+// //                 </div>
+
+// //                 {/* 👇 Add a link to the full agent page */}
+// //                 <Link to={`/agent/${idx}`} className="text-blue-600 text-sm mt-2 inline-block">
+// //                   View Full Page
+// //                 </Link>
+// //               </div>
+// //             </div>
+// //           ))}
+// //         </div>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+
+
+// import React from "react";
+// import "./App.css";
+// import { Link } from "react-router-dom";
+
+// export default function VoiceAgentsShowcase() {
+//   const agents = [
+//     {
+//       industry: "Restaurant",
+//       title: "Reservation Assistant · Restaurant",
+//       tags: ["•Receptionist", "•Real-Time Booking"],
+//       description:
+//         "Meet Leo, an AI assistant for the Daily Dish, a fine dining restaurant. His primary role is to assist callers in scheduling reservations at the Daily Dish.",
+//       audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
+//     },
+//     {
+//       industry: "Home Services",
+//       title: "Service Dispatcher · Plumbing",
+//       tags: ["•Appointment Scheduling", "•Emergency Call Handling", "•Service Routing"],
+//       description:
+//         "Meet Tom, an AI assistant for Fix It Plumbing. His primary role is to handle emergency service requests, schedule appointments, and route calls to on-call technicians, ensuring no customer inquiry goes unanswered.",
+//       audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
+//     },
+//     {
+//       industry: "Cosmetic",
+//       title: "Healthcare Receptionist · Appointment Coordinator",
+//       tags: ["•Consultation Booking", "•Treatment FAQs", "•Voice Receptionist"],
+//       description:
+//         "Meet Brenda, an AI assistant for Radiance Med Spa. She helps clients book consultations for lip filler and other aesthetic treatments, answers common questions about procedures and aftercare, and ensures smooth scheduling without the wait.",
+//       audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
+//     },
+//     {
+//       industry: "Beauty Services",
+//       title: "Salon Assistant",
+//       tags: ["•Appointment", "•FAQs"],
+//       description:
+//         "Meet Clara, an AI assistant for the Hive Salon, designed to manage appointments and answer frequently asked questions.",
+//       audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
+//     },
+//   ];
+
+//   return (
+//     <div className="voice-agents-wrapper">
+//       <div className="voice-agents-container">
+//         <div className="voice-agents-header">
+//         </div>
+
+//         <div className="agent-grid">
+//           {agents.map((agent, idx) => (
+//             <div key={idx} className="agent-card">
+//               <div>
+//                 <span className="agent-tag">{agent.industry}</span>
+//                 <h3 className="agent-title">{agent.title}</h3>
+//                 <div className="agent-tags">
+//                   {agent.tags.map((tag, i) => (
+//                     <span key={i}>{tag} </span>
+//                   ))}
+//                 </div>
+//                 <p className="agent-description">{agent.description}</p>
+//               </div>
+
+//               <div className="agent-audio">
+//                 <p className="agent-audio-label">Voice Demo</p>
+//                 <div className="agent-audio-box">
+//                   <audio controls style={{ width: "100%" }} aria-label={`Audio demo for ${agent.title}`}>
+//                     <source src={agent.audio} type="audio/mpeg" />
+//                     Your browser does not support the audio element.
+//                   </audio>
+//                 </div>
+
+//                 <Link to={`/agent/${idx}`} className="text-blue-300 text-sm mt-3 inline-block underline">
+//                   View Full Page
+//                 </Link>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
 
 //<h1>Hear AI Voice Agents in Action</h1>
+//<p>Choose a call type to see how Synthflow AI agents handle real conversations.</p>
+
+// import React from "react";
+// import { useParams, Link } from "react-router-dom";
+
+// const agents = [
+//   {
+//     industry: "Restaurant",
+//     title: "Reservation Assistant · Restaurant",
+//     audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
+//   },
+//   {
+//     industry: "Home Services",
+//     title: "Service Dispatcher · Plumbing",
+//     audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
+//   },
+//   {
+//     industry: "Cosmetic",
+//     title: "Healthcare Receptionist · Appointment Coordinator",
+//     audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
+//   },
+//   {
+//     industry: "Beauty Services",
+//     title: "Salon Assistant",
+//     audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
+//   },
+// ];
+
+//   return (
+//     <div style={{ padding: "40px", maxWidth: "600px", margin: "0 auto" }}>
+//       <Link to="/" style={{ display: "block", marginBottom: "20px", color: "#3b82f6" }}>
+//         ← Back to All Agents
+//       </Link>
+
+//       <h2 style={{ fontSize: "20px", marginBottom: "12px" }}>{agent.title}</h2>
+
+//       <audio controls style={{ width: "100%" }}>
+//         <source src={agent.audio} type="audio/mpeg" />
+//         Your browser does not support the audio element.
+//       </audio>
+//     </div>
+//   );
+// }
+
+// import React from "react";
+
+// export default function AudioDemos() {
+//   const agents = [
+//     {
+//       audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
+//     },
+//     {
+//       audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
+//     },
+//     {
+//       audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
+//     },
+//     {
+//       audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
+//     },
+//   ];
+
+//   return (
+//     <div style={{ padding: "40px", maxWidth: "600px", margin: "0 auto" }}>
+
+//       {agents.map((agent, idx) => (
+//         <div key={idx} style={{ marginBottom: "32px" }}>
+//           <h3 style={{ fontSize: "18px", marginBottom: "8px" }}>{agent.title}</h3>
+//           <audio controls style={{ width: "100%" }}>
+//             <source src={agent.audio} type="audio/mpeg" />
+//             Your browser does not support the audio element.
+//           </audio>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+
+// import React from "react";
+
+// export default function AudioDemos() {
+//   const agents = [
+//     {
+//       title: "Reservation Assistant · Restaurant",
+//       audio: process.env.PUBLIC_URL + "/audio/Resturante.mp3",
+//     },
+//     {
+//       title: "Service Dispatcher · Plumbing",
+//       audio: process.env.PUBLIC_URL + "/audio/Plumping.mp3",
+//     },
+//     {
+//       title: "Healthcare Receptionist · Med Spa",
+//       audio: process.env.PUBLIC_URL + "/audio/MedSpa.mp3",
+//     },
+//     {
+// //       title: "Salon Assistant",
+// //       audio: process.env.PUBLIC_URL + "/audio/Salon.mp3",
+// //     },
+// //   ];
+
+// //   return (
+// //     <div style={{ padding: "40px", maxWidth: "600px", margin: "0 auto" }}>
+// //       {agents.map((agent, idx) => (
+// //         <div key={idx} style={{ marginBottom: "32px" }}>
+// //           <h3 style={{ fontSize: "18px", marginBottom: "8px" }}>{agent.title}</h3>
+// //           <audio controls style={{ width: "100%" }}>
+// //             <source src={agent.audio} type="audio/mpeg" />
+// //             Your browser does not support the audio element.
+// //           </audio>
+// //         </div>
+// //       ))}
+// //     </div>
+// //   );
+// // }
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// const agents = [
+//   { id: 0, title: "Reservation Assistant · Restaurant" },
+//   { id: 1, title: "Service Dispatcher · Plumbing" },
+//   { id: 2, title: "Healthcare Receptionist · Med Spa" },
+//   { id: 3, title: "Salon Assistant" },
+// ];
+
+// export default function VoiceAgentsShowcase() {
+//   return (
+//     <div style={{ padding: 40, maxWidth: 600, margin: "0 auto" }}>
+//       <h1 style={{ marginBottom: 24 }}>Voice Assistant Demos</h1>
+//       <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+//         {agents.map((agent) => (
+//           <li key={agent.id} style={{ marginBottom: 16 }}>
+//             <Link
+//               to={`/demo/${agent.id}`}
+//               style={{ color: "#3b82f6", textDecoration: "underline" }}
+//             >
+//               {agent.title}
+//             </Link>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }

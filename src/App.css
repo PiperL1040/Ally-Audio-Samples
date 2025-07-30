@@ -123,3 +123,11 @@
   border-radius: 8px;
   padding: 12px;
 }
+
+.agent-link {
+  color: #3b82f6; /* blue */
+  text-decoration: underline;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-weight: 500;
+}
