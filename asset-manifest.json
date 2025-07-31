@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Ally-Audio-Samples/static/js/main.bff8497e.js",
+    "main.js": "/Ally-Audio-Samples/static/js/main.9335c775.js",
     "index.html": "/Ally-Audio-Samples/index.html",
-    "main.bff8497e.js.map": "/Ally-Audio-Samples/static/js/main.bff8497e.js.map"
+    "main.9335c775.js.map": "/Ally-Audio-Samples/static/js/main.9335c775.js.map"
   },
   "entrypoints": [
-    "static/js/main.bff8497e.js"
+    "static/js/main.9335c775.js"
   ]
 }
